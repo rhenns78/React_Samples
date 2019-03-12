@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    <link rel="stylesheet" href="../../NuevaDenuncia/htmlPrevisualizacion/style.css">
+    <link rel="stylesheet" href="../../NuevaDenuncia/htmlPrevisualizacion/style.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <style>
+        body{
+
+          font-size: small;
+          font-family: 'Roboto Condensed', sans-serif;
+          margin: 5px;
+          background-color: #fff;
+
+        }
+      </style>
+    <title>ACHS Virtual</title>
+  </head>
+  <body>
+    <div class="containter">
+      <div class="row">
+        <div class="col-11 prev-title" style="padding-top: 20px">
+          <h5>DENUNCIA INDIVIDUAL DE ENFERMEDAD PROFESIONAL</h5>
+          <h6>PARA TRABAJADOR</h6>
+        </div>
+        <div class="col-1">
+          <img class="logo" src="../../../../../../../images/logoachs.png">
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- 1. IDENTIFICACIÓN DE LA DENUNCIA -->
+      <div class="prev-panel">
+        <h6 class="pan-title" style="margin-right: 67%">1. IDENTIFICACIÓN DE LA DENUNCIA</h6>
+        <div class="row campos">
+          <div class="col-6">
+              <div class="campo">
+                <span>Fecha de la Denuncia :</span>
+              </div>
+              <div class="valor">
+                <span>{fechaDenuncia}</span>
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="campo">
+                <span>Hora de Presentación :</span>
+              </div>
+              <div class="valor">
+                <span>{horaPresen}</span> 
+              </div>
+          </div>
+          <div class="col-2" >
+              <span>Hrs.</span> 
+          </div>
+        </div>
+      </div>
+      <!-- 2. IDENTIFICACIÓN DEL EMPLEADOR -->
+      <div class="prev-panel">
+        <h6 class="pan-title" style="margin-right: 67%">2. IDENTIFICACIÓN DEL EMPLEADOR</h6>
+          <div class="row campos">
+            <div class="col-9">
+                <div class="campo">
+                  <span>Nombre o Razón Social :</span>
+                </div>
+                <div class="valor">
+                  <span>{nombreRazonSocial}</span>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="campo">
+                  <span>Rut :</span>
+                </div>
+                <div class="valor">
+                  <span>{rutEmpleador}</span> 
+                </div>
+            </div>
+          </div>
+          <div class="row campos">
+              <div class="col-7">
+                <div class="campo">
+                  <span>Dirección :</span>
+                </div>
+                <div class="valor">
+                  <span>{direcccionEmpreador}</span>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="campo">
+                  <span>Comuna :</span>
+                </div>
+                <div class="valor">
+                  <span>{comunaEmpleador}</span> 
+                </div>
+              </div>
+          </div>
+          <div class="row campos">
+              <div class="col-4">
+                <div class="campo">
+                  <span>Teléfono :</span>
+                </div>
+                <div class="valor">
+                  <span>{fonoEmpleador}</span>
+                </div>
+              </div>
+              <div class="col-8">
+              </div>
+          </div>
+          <div class="row campos">
+              <div class="col-8">
+                <div class="campo">
+                  <span>Act. Económica :</span>
+                </div>
+                <div class="valor">
+                  <span>{ActividadEcEmpleador}</span>
+                </div>
+              </div>
+              <div class="col-3">
+                  <div class="campo">
+                    <span>N° Trabajadores :</span>
+                  </div>
+                  <div class="valor">
+                    <span>{nroTrab}</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-8">
+                <div class="campo">
+                  <span>Tipo Empresa :</span>
+                </div>
+                <div class="valor">
+                  <span>{tipoEmpresa}</span>
+                </div>
+              </div>
+              <div class="col-4">
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-12">
+                <div class="campo">
+                  <span>Si es contratista o subcontratista, señale actividad económica principal :</span>
+                </div>
+                <div class="valor">
+                  <span>{actEcoPrincipal}</span>
+                </div>
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-12">
+                <div class="campo">
+                  <span>Propiedad de la Empresa :</span>
+                </div>
+                <div class="valor">
+                  <span>{propiedadEmpresa}</span>
+                </div>
+              </div>
+          </div>
+      </div>
+      <!-- 3. IDENTIFICACIÓN DEL TRABAJADOR(A) -->
+      <div class="prev-panel">
+          <h6 class="pan-title" style="margin-right: 64%">3. IDENTIFICACIÓN DEL TRABAJADOR(A)</h6>
+          <div class="row campos">
+            <div class="col-9">
+                <div class="campo">
+                  <span>Nombre :</span>
+                </div>
+                <div class="valor">
+                  <span>{nombreCompletoTrab}</span>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="campo">
+                  <span>Rut :</span>
+                </div>
+                <div class="valor">
+                  <span>{rutTrab}</span> 
+                </div>
+            </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-5">
+                <div class="campo">
+                  <span>Sexo :</span>
+                </div>
+                <div class="valor">
+                  <span>{sexoTrab}</span>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="campo">
+                  <span>Edad :</span>
+                </div>
+                <div class="valor">
+                  <span>{edadTrab}</span> 
+                </div>
+              </div>
+              <div class="col-4">
+                  <div class="campo">
+                    <span>Fecha Nacimiento :</span>
+                  </div>
+                  <div class="valor">
+                    <span>{fechaNacTrab}</span> 
+                  </div>
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-8">
+                <div class="campo">
+                  <span>Dirección Particular :</span>
+                </div>
+                <div class="valor">
+                  <span>{direccionParticularTrab}</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="campo">
+                  <span>Comuna :</span>
+                </div>
+                <div class="valor">
+                  <span>{comunaTrab}</span> 
+                </div>
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-4">
+                <div class="campo">
+                  <span>Teléfono :</span>
+                </div>
+                <div class="valor">
+                  <span>{fonoTrab}</span>
+                </div>
+              </div>
+              <div class="col-8">
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-6">
+                <div class="campo">
+                  <span>Nacionalidad :</span>
+                </div>
+                <div class="valor">
+                  <span>{nacionalidadTrab}</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="campo">
+                  <span>Pertenece a algún de Pueblo Originario :</span>
+                </div>
+                <div class="valor">
+                  <span>{puebloOrigTrab}</span>
+                </div>
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-8">
+                <div class="campo">
+                  <span>Profesión/Oﬁcio :</span>
+                </div>
+                <div class="valor">
+                  <span>{profesionOficioTrab}</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="campo">
+                  <span>Tipo de Contrato :</span>
+                </div>
+                <div class="valor">
+                  <span>{tipoContradoTrab}</span>
+                </div>
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-4">
+                <div class="campo">
+                  <span>Antigüedad :</span>
+                </div>
+                <div class="valor">
+                  <span>{antiguedadTrab}</span>
+                </div>
+              </div>
+              <div class="col-8">
+              </div>
+          </div>
+
+          <div class="row campos">
+              <div class="col-6">
+                <div class="campo">
+                  <span>Tipo de Ingreso :</span>
+                </div>
+                <div class="valor">
+                  <span>{tipoIngresoTrab}</span>
+                </div>
+              </div>
+              <div class="col-6">
+                  <div class="campo">
+                    <span>Categoría Ocupacional :</span>
+                  </div>
+                  <div class="valor">
+                    <span>{categoriaOcupacionalTrab}</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- 4. DATOS DE LA ENFERMEDAD -->
+      <div class="prev-panel">
+        <h6 class="pan-title" style="margin-right: 72%">4. DATOS DE LA ENFERMEDAD</h6>
+        <div class="row campos">
+              <div class="col-12">
+                <div class="campo-bajo">
+                  <span>Describa las molestias o síntomas que actualmente tiene el trabajador : </span>
+                </div>
+                <div class="valor-bajo">
+                    {molestiasSintomasEnf}
+                </div>
+              </div>
+        </div>
+        <div class="row campos">
+                <div class="col-12">
+                  <div class="campo-bajo">
+                    <span>¿Hace cuánto tiempo tiene estas molestias o síntomas? : </span>
+                  </div>
+                  <div class="valor-bajo">
+                      {cuantoTiempoMolestiasEnf}
+                  </div>
+                </div>
+        </div>
+        <div class="row campos">
+                <div class="col-12">
+                    <div class="campo-bajo">
+                        <span>¿Había tenido estas molestias en el puesto de trabajo actual, anteriormente? : </span>
+                    </div>
+                    <div class="valor-bajo">
+                          {molestiasPuestoTrabajoEnf}
+                    </div>
+                </div>
+        </div>
+        <div class="row campos">
+                <div class="col-12">
+                    <div class="campo-bajo">
+                        <span>Parte del cuerpo afectada : </span>
+                    </div>
+                    <div class="valor-bajo">
+                        {parteDelCuerpoAfectadaEnf}
+                    </div>
+                </div>
+        </div>
+        <div class="row campos">
+                <div class="col-12">
+                    <div class="campo-bajo">
+                        <span>Describa el trabajo o actividad que realizaba cuando comenzaron las molestias : </span>
+                    </div>
+                    <div class="valor-bajo">
+                        {actividadComensaronMolestiasEnf} 
+                    </div>
+                </div>
+        </div>
+        <div class="row campos">
+                <div class="col-12">
+                    <div class="campo-bajo">
+                        <span>Nombre del puesto de trabajo o actividad que realizaba cuando comenzaron las molestias : </span>
+                    </div>
+                    <div class="valor-bajo">
+                        {puestoTrabajoMolestiasEnf} 
+                    </div>
+                </div>
+        </div>    
+        <div class="row campos">
+                <div class="col-12">
+                    <div class="campo-bajo">
+                        <span>¿Existen compañero de trabajo con las mismas molestias? : </span>
+                    </div>
+                    <div class="valor-bajo">
+                        {existenCompanerosEnf} 
+                    </div>
+                </div>
+        </div>
+        <div class="row campos">
+                <div class="col-12">
+                    <div class="campo-bajo">
+                        <span>¿Qué cosas o agentes de trabajo cree usted que le causan estas molestias? : </span>
+                    </div>
+                    <div class="valor-bajo">
+                        {cosasOAgentesDeTrabajoCreeEnf} 
+                    </div>
+                </div>
+        </div>
+        <div class="row campos">
+                <div class="col-12">
+                    <div class="campo-bajo">
+                        <span>¿Cuánto tiempo ha estado expuesto o trabajando con estas cosas o agentes del trabajo? : </span>
+                    </div>
+                    <div class="valor-bajo">
+                        {tiempoExpuestoTrabajandoEnf} 
+                    </div>
+                </div>
+        </div>
+      </div>
+      <!-- 5. IDENTIFICACIÓN DEL DENUNCIANTE -->
+      <div class="prev-panel">
+        <h6 class="pan-title" style="margin-right: 65%">6. IDENTIFICACIÓN DEL DENUNCIANTE</h6>
+        <div class="row campos">
+            <div class="col-9">
+                <div class="campo">
+                  <span>Nombre :</span>
+                </div>
+                <div class="valor">
+                  <span>{nombreDenun}</span>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="campo">
+                  <span>Rut :</span>
+                </div>
+                <div class="valor">
+                  <span>{rutDenun}</span> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row campos">
+            <div class="col-4">
+                <div class="campo">
+                    <span>Teléfono :</span>
+                </div>
+                <div class="valor">
+                  <span>{fonoDenun}</span>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="campo">
+                    <span>Clasiﬁcación del denunciante (ley 16.744) :</span>
+                </div>
+                <div class="valor">
+                    <span>{clasificacionDenun}</span> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row campos">
+            <div class="col-12">
+                <div class="campo-bajo">
+                    <h6 class="title-firma">FIRMA DEL DENUNCIANTE :</h6>
+                </div>
+                <div class="valor-textArea-bajo">
+                    {firmaDenun} 
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+    </div>
+   
+
+  </body>
+</html>

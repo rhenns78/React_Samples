@@ -1,0 +1,49 @@
+@import "colors.scss";
+
+//  componenete para los acordiones usados en el inicio
+
+.faq-section{
+  padding-top:25px;
+}
+
+.faq-title {
+  font-weight: bold;
+}
+
+.faq-index {
+  position: sticky;
+  top: 0;
+  margin-top: 15px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: $azulAchs;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.title-accordion {
+  font-size: 18px;
+  font-weight: bold;
+  color: $grisOscuro;
+}
+
+.accordion-section {
+  color: $grisClaro;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.accordion-section.selected {
+  color: $azulAchs;
+}
+
+.accordion-section:hover {
+  color: $azulAchs;
+}
+
+.text-body {
+  text-align: justify;
+  color: $grisOscuro;
+}

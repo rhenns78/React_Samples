@@ -1,0 +1,44 @@
+{
+    "Data": [
+    {
+      "Id": 7,
+      "IdProfile": 1,
+      "Description": "Admin",
+      "Active": true,
+      "Dispensable": true,
+      "CreationDate": "2018-10-26T12:30:12"
+    },
+    {
+      "Id": 10,
+      "IdProfile": 1,
+      "Description": "Worker",
+      "Active": true,
+      "Dispensable": true,
+      "CreationDate": "2018-10-26T12:38:13"
+    },
+    {
+      "Id": 11,
+      "IdProfile": 1,
+      "Description": "RRHH",
+      "Active": true,
+      "Dispensable": true,
+      "CreationDate": "2018-10-26T12:38:36"
+    },
+    {
+      "Id": 12,
+      "IdProfile": 1,
+      "Description": "Gerente",
+      "Active": true,
+      "Dispensable": true,
+      "CreationDate": "2018-10-26T12:38:48"
+    },
+    {
+      "Id": 13,
+      "IdProfile": 1,
+      "Description": "Desarrollador",
+      "Active": true,
+      "Dispensable": true,
+      "CreationDate": "2018-10-26T12:39:03"
+    }
+     ]
+}

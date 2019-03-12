@@ -1,0 +1,79 @@
+@import "components/colors.scss";
+@import "components/iconTopBar.scss";
+@import "components/menu.scss";
+@import "components/header.scss";
+@import "components/historialNotificacion.scss";
+@import "components/tablas.scss";
+@import "components/configNotificacion.scss";
+@import "components/usuario.scss";
+@import "components/listWithButton.scss";
+@import "components/asignNotification.scss";
+@import "components/filtroSelect.scss";
+@import "components/accordion.scss";
+@import "components/siteWith.scss";
+@import "components/tableTabs.scss";
+
+
+@font-face {
+    font-family: "ACHS";
+    src: url("../fonts/Sucursarvirtual-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: $grisOscuro;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: $grisOscuro;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: regular;
+    color: $grisOscuro;
+}
+
+h4{
+    font-size: 18px !important;
+    font-weight: 500;
+    color: $grisOscuro;
+}
+
+h5{
+    font-size: 14px;
+    font-weight: 500;
+    color: $grisOscuro;
+    line-height: 1.5;
+}
+
+h6{
+    font-size: 12px !important;
+    color: $grisOscuro;
+}
+
+p{
+    font-size: 12px;
+    line-height: 145%;
+    color: $grisOscuro;
+}
+.no-data-image{
+    height: 250px;
+    display: grid;
+    // position: fixed;
+    // margin: auto !important;
+    .image-info {
+        height: 200px;
+        margin: auto !important;
+    }
+    .text {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+}

@@ -1,0 +1,103 @@
+@import "colors.scss";
+
+//Componente de listado para las configuraciones de notificaciones
+
+.headNotificaction-flex{
+    display: flex; 
+    .headNotificaction{
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: 45px;
+        color: $grisOscuro;
+        font-size: 18px;
+        font-weight: 500;
+        .textHeaderMargin{
+            margin-left: 110px;
+        }
+        .textHeaderMarginleft{
+            left:0;
+
+        }
+    }
+}
+.notificacion-mantenedor{
+    .headers-flex{
+        display: flex;    
+        .header-description{
+            display: grid;
+            flex-grow: 1;  
+            .titleHeader{
+                display: flex;
+                align-items: flex-end;
+                font-size:18px;
+                >i{
+                    padding-top:2px;
+                    margin-right: 5px;
+                    margin-left:5px
+                }
+            }
+        }
+        .checksChannels{
+            right: 50px;
+            position: absolute;
+            .checkHeaderMargin{
+                margin-left: 120px;
+            }
+        }
+    }
+    .dx-accordion-wrapper{
+        border: none;
+        border-radius: 5px;       
+    }
+    .dx-accordion-item{
+        border: none;
+        border-radius: 5px;
+    }
+    .dx-item.dx-accordion-item{
+        margin-bottom: 10px;
+        background-color: $grisBlanco;
+     } 
+}
+
+.notificacion-mantenedor-list {
+    display: flex;
+    
+}
+
+.notificacion-mantenedor-list-item{
+    .dx-item.dx-list-item{
+        border: none;
+        .dx-state-hover{
+            background-color: $azulAchs !important;
+        }
+    }
+    .notification-list-item-flex {
+        display: flex
+    }
+    .notification-check {
+        margin-left:25px;
+    }
+    .notificaction-checks {
+        right: 37px;
+        position: absolute;
+        > .checkMargin {
+            margin-left: 120px;
+        }
+       
+    }
+    .notification-text {
+        display: grid;
+        flex-grow: 1;  
+        > span {
+            margin-left: 10px;
+            color: $grisOscuro;
+        }
+        > .name {
+            padding-top:3px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $grisOscuro;
+        }
+       
+    }
+}

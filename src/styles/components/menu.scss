@@ -1,0 +1,286 @@
+@import "colors.scss";
+
+// Menú y submenú de la aplicación
+.menu-animation-width{
+     transition: width 0.3s;
+     z-index: 200;
+     top:0px;
+     bottom:0px;
+     overflow-x: "hidden";
+     overflow-y: "auto";
+     position:fixed !important;
+     background-color: $blanco;
+    .menu-area{
+        min-height: 450px;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        .main-menu{
+            width: 70px;
+            display: flex;
+            flex-flow: column;
+            background-color: $verdeAchs;
+            z-index: 20000;
+            .menu-logo{
+                width: 70px;
+                height: 70px;
+                padding: 11px;
+            }
+            >.main-menu-item{
+                cursor: pointer;
+                user-select: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-shrink: 0;
+                text-align: center;
+                height: 70px;
+                width: 70px;
+                background-color: inherit;
+                color:$blanco;
+                &:hover{
+                    background-color: lighten($verdeAchs, 10%) ;
+                }
+                >i{
+                    margin-bottom:10px;
+                    font-size:48px;
+                    color: $blanco;
+                }
+                >span{
+                    color:$blanco;
+                    font-size:12px;
+                }
+            }
+            .active{
+                background-color: $grisBlanco;
+                >i{
+                    color:$verdeAchs;
+                }
+                >span{
+                    color:$verdeAchs;
+                }
+                &:hover{
+                    background-color: lighten($grisBlanco, 10%) ;
+                }
+            }
+        }
+        .submenu{
+            padding: 10px;
+            position: absolute;
+            width: 220px;
+            background-color: $grisBlanco;
+            right: 0px;
+            overflow-x: hidden;
+            top: 0px;
+            bottom: 0px;
+            z-index: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+            .submenu-name {
+                color:$grisOscuro;
+                font-size: 24px;
+                user-select: none;
+                margin-top: 19px;
+                margin-bottom: 8px;
+                text-align: center;
+            }
+            .menu-item{
+                cursor: pointer; 
+                margin: 0px;
+                padding: 7px;
+                height: 35px;
+                display: flex;
+                margin-bottom: 1px;
+                padding-left: 10px;
+                user-select: none;
+                font-size: 14px;
+                font-weight: 600;
+                padding-right: 10px;
+                border-radius: 5px;
+                background-color: inherit;
+                >i{
+                     margin-right: 10px;
+                     font-size: 20px;
+                     color: $grisOscuro;         
+                 }
+                >span{
+                    color: $grisOscuro;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .menu-item.active{
+                background-color: lighten($azulAchs, 90%);           
+                >i{
+                    color:$azulAchs;
+                }
+                >span{
+                    font-weight: 600;
+                    color:$azulAchs;
+                }
+            }
+           
+        }
+        .show-sub-menu {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.menu-icon.selected {
+    color: black;
+}
+
+.select-empresas{
+    z-index: 2000;
+    height:45px;
+    padding-top: 2px;
+}
+
+.select-sucursal{
+    padding-top: 7px !important;
+    z-index: 2000;
+    height: 49px;
+    padding-top: 3px;
+}
+.company-name-select {
+    padding-top:2px;
+    display: flex;
+    flex-direction: column;
+    text-indent: 0;
+    line-height: 20px;
+    width: 100%;
+    .nombre {
+        padding-left: 10px;
+        width: 80%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--main-color-grisTexto);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .rut {
+        padding-left: 10px;
+        width: 80%;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--main-color-grisTexto);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .check-empresa {
+        position: absolute;
+        white-space: nowrap; 
+        padding-top:7px;
+        right: 5px;
+        font-size: 25px;
+        color: var(--main-color-verdeComplementario);
+    }
+    .sucursal {
+        padding-left: 10px;
+        width: 80%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--main-color-grisTexto);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .check-sucursal {
+        position: absolute;
+        white-space: nowrap; 
+        padding-top:0px;
+        right: 5px;
+        font-size: 15px !important;
+        color: var(--main-color-verdeComplementario);
+    }
+}
+.sucursales-vigentes{
+    margin-top: 45px;
+    position: absolute;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--main-color-grisContenidoTabla) ;
+    .texto{
+        padding-left:5px;
+        margin-right:5px;
+        width: 80%;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--main-color-negro);
+    }
+}
+
+.popover-menu div.dx-popup-content {
+    padding: 10px;
+}
+
+.company-select-list .dx-template-wrapper.dx-item-content.dx-list-item-content {
+    padding: 5px 0px;
+}
+
+.company-select-list .dx-item.dx-list-item {
+    border-top: none;
+}
+
+.company-select-list.sucursales-list .dx-scrollable-wrapper {
+    margin-top: 40px;
+    height: 200px;
+}
+
+.expand-button {
+    cursor: pointer;
+    user-select: none;
+    background-color: $verdeAchs;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    z-index: 20;
+    bottom: 35px;
+    left: 70px;
+    height: 28px;
+    width: 26px; 
+}
+
+.collapse-button {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    .main-menu-item{
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        text-align: center;
+        height: 70px;
+        width: 70px;
+        background-color: inherit;
+        color:$blanco;
+        >i{
+            margin-bottom:10px;
+            font-size:48px;
+            color: $azulAchs;
+        }
+        >span{
+            color:$azulAchs;
+            font-size:12px;
+        }
+    }
+}
+
+.hide {
+    display: none;
+    
+}
+

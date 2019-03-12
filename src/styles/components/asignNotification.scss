@@ -1,0 +1,109 @@
+@import "colors.scss";
+
+// Componente para visualizar listados
+// Se utiliza en los listados de paquetes de notificaciones
+.nombre{
+    color: $grisOscuro;
+    font-size: 14px;
+    font-weight: 600;
+}
+.detalle{
+    color: $grisMedio;
+    font-size:14px;
+    font-weight: 400;
+}
+.numero{
+    font-size: 24px;
+    color:$verdeAchs;
+    padding-right:5px;
+}
+.suscripciones{
+    font-size: 14px;
+    color:$grisOscuro;
+    font-weight: 600;
+    padding-right:10px;
+}
+
+.list-notificaciones-empresa .dx-item.dx-list-item {
+    background-color: $grisBlanco;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    .notification-empresa-item{
+        display: flex;
+        align-items: center;
+        >i{
+            color:$grisOscuro;
+            font-size:48px;
+            margin-top:-20px;
+        }
+        .notification-text {
+            display: grid;
+            flex-grow: 1;
+            margin-left: 10px;
+            .name{
+                @extend .nombre;
+            }
+            .details{
+                @extend .detalle;
+            }
+        }
+        .notification-subs{
+            @extend .suscripciones;
+            >span{
+                @extend .numero;
+            }
+        }
+        .icon{
+            top: 20px;
+            color:$azulAchs;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.list-notificaciones-empresa .dx-item.dx-list-item.dx-state-focused {
+    background-color:#D5D5D5;
+}
+
+.list-notificaciones-empresa .dx-item.dx-list-item.dx-state-focused.dx-list-item-selected {
+    background-color:#D5D5D5;
+}
+
+.list-notificaciones-empresa .dx-item.dx-list-item.dx-list-item-selected {
+    background-color:#D5D5D5;
+}
+
+//Detalle
+.notification-empresa-suscritos{
+    display: flex;
+    >i{
+        color:$azulAchs;
+        cursor: pointer;
+        font-size:39;
+    }
+    .icon{
+        color:$grisOscuro;
+        font-size:48px;
+        margin-left:10px;
+    }
+    .notification-text{
+        display: grid;
+        flex-grow: 1;
+        margin-left:10px;
+        .name{
+            @extend .nombre;
+        }
+        .details{
+            @extend .detalle;
+        }
+    }
+    .notification-subs{
+        @extend .suscripciones;
+        
+        >span{
+            @extend .numero;
+        }
+
+    }
+}

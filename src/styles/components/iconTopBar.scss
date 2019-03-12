@@ -1,0 +1,185 @@
+@import "colors.scss";
+// 4 botones del topRight iconBar
+
+
+.header-icons {
+    display: flex;
+    position: absolute;
+    right: 30px;
+  }
+
+.app-list .dx-item {
+    border-top: none;
+    border: none;
+    border-radius: 10px;
+    .app-item {
+        display: flex;
+        > i {
+            color: $grisMedio;
+            margin-top:-7px;
+            font-size: 36px;
+          }
+        > span {
+          color: $grisOscuro;
+          margin-left: 10px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+    }
+}
+
+// Información de usuario
+.info-usuario-popup .dx-popup-content{
+    width: 330px;
+    .cardCircle{
+        position:absolute;
+        width: 50px;
+        height: 50px;
+        background:$verdeAchs;
+        border-radius:50%;  
+        .cardTextCircle{
+            left:50px;
+            color: $blanco;
+            font-weight: 700;
+            top: auto;
+            font-size: 15px;
+            text-align: center;
+            padding-top: 15px;
+        }
+    }
+    .datosCuenta{
+        padding-top: 5px;
+        padding-bottom: 8px;
+        left:50px;
+        max-width: 280px;
+        .textosCard{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            h5{
+                color:$grisOscuro;      
+            }
+        }
+    }
+    .divider{
+        height: 0px; 
+        border-bottom: 1px solid $grisClaro ; 
+        margin-bottom: 10px;
+    }
+    .app-info-list{
+        @extend .app-list;
+        .app-info-item{
+        @extend .app-item;
+        }
+    }
+    .dx-list-item{
+        border:none;
+    }
+}
+
+// Stack de aplicaciones SSO
+.app-stack-popup .dx-popup-content{
+    padding: 10px;
+    width: 241px;
+    .app-stack-list{
+        @extend .app-list;
+        .app-stack-item{
+        @extend .app-item;
+        }
+    }
+}
+
+
+// Notificaciones
+.notification.dx-badge.dx-navbar-item-badge {
+    margin: 0;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$azulAchs;
+    font-weight: 600;
+    width: 25px;
+}
+
+.app-notification-popup .dx-popup-content{
+    width: 450px;
+    .header-notification-flex {
+        display: flex;
+        align-items: center;
+        padding-bottom:10px;
+        border-bottom: 2px solid $grisClaro;
+        .titulo {
+            display: grid;
+            flex-grow: 1;
+            >span{
+                font-size: 20px;
+                color:$grisOscuro;
+            }
+        }
+        .text{
+            font-weight: 600;
+            color: $verdeAchs;
+            border: none;
+            margin-top:10px;
+        }
+    }
+    .user-notification-container{
+        min-height: 100px;
+        height: 400px;
+        .user-notification-list .dx-item.dx-list-item{
+            padding: 0px;
+            .dx-template-wrapper{
+                padding:0;
+            }
+            .notification-list-item-wrapper{
+                @extend .listado-notificaciones;
+                >.icon{
+                    @extend .icon-notificaciones;
+                    .card-circle-notification{
+                        @extend .circle-notificaciones;
+                        .card-text-circle{
+                            @extend .circle-text;
+                        }
+                    }
+                }
+                >.text{
+                    @extend .texto-notificaciones;
+                    >.title{
+                        @extend .titulo;
+                    }
+                    >.text{
+                        @extend .mensaje;
+                    }
+                }
+                >.time{
+                    @extend .fecha;
+                }
+                .button{
+                    padding-left:5px;
+                    .text{
+                        font-size: 10px;
+                        font-weight: 600;
+                        color: $verdeAchs;
+                        border: none;
+                        margin-top:10px;
+                    }
+                }
+            }
+            .notification-list-item-wrapper.unread{
+                @extend .notification-list-wrapper-unread;
+            }
+        }
+    }
+    .foot-header-notifications{
+        text-align: center;
+        border-top: 2px solid $grisClaro;
+        .text{
+            font-weight: 600;
+            color: $verdeAchs;
+            border: none;
+            margin-top:10px;
+        }
+    }
+}

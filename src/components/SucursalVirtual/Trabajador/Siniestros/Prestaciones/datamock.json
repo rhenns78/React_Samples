@@ -1,0 +1,49 @@
+{
+  
+ /*
+      "IdSiniestro": "string",
+      "IdPrestacion": "string",
+      "TipoPrestacionPrestacion": "string",
+      "EstadoDocumentacion": "string",
+      "EstadoPago": "string",
+      "MontoTotalPagadoPagado": "string",
+      "DiasTotalesPagados": "string",
+      "MontoTotalPagado": "string",
+      "FechaPago": "string",
+      "ListadoLiquidaciones": [
+        "string"
+      ]
+
+  */
+
+    "prestacionesEconomicas": [
+    
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"140", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pendiente", "MontoTotalPagado": 65000, "FechaPago": null , "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"150", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"160", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago":"2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"170", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"180", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"190", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"200", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"210", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"220", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"230", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"240", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"250", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"260", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07"},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"280", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pendiente", "MontoTotalPagado": 65000, "FechaPago": null, "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"290", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"300", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago":"2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"310", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"320", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"330", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"340", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"350", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"360", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"370", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"380", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07" , "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Indemnización", "IdSiniestro": "302", "IdPrestacion":"390", "EstadoDocumentacion": "Completo", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []},
+      {"TipoPrestacion": "Subsidio", "IdSiniestro": "302", "IdPrestacion":"400", "EstadoDocumentacion": "Incompleto", "EstadoPago": "Pagado", "MontoTotalPagado": 65000, "FechaPago": "2018-12-17 16:05:07", "ListadoLiquidaciones": []}
+      
+    ],
+    "Success":true}

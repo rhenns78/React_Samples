@@ -1,0 +1,149 @@
+{
+ 
+   "Data":[  
+      {  
+         "NotificationGroupId":3,
+         "NotificationGroupDescription":"Notificaciones de Siniestros",
+         "NotificacionGroupIcon":"error_outline",
+         "Notifications":[  
+            {  
+               "NotificationGroupId":3,
+               "NotificationGroupDescription":"Notificaciones de Siniestros",
+               "NotificationId":3,
+               "NotificationDescription":"Notificar a la empresa cuando se creó un siniestro",
+               "NotificationCode":"NOTIF_SINIESTRO_CREADO",
+               "ChannelSelection":{  
+                  "Mail":true,
+                  "Sms":true,
+                  "Push":true
+               },
+               "CreationDate":"2019-01-02T15:14:39",
+               "Active":true
+            },
+            {  
+               "NotificationGroupId":3,
+               "NotificationGroupDescription":"Notificaciones de Siniestros",
+               "NotificationId":6,
+               "NotificationDescription":"Test",
+               "NotificationCode":"NOTIF_TEST",
+               "ChannelSelection":{  
+                  "Mail":true,
+                  "Sms":true,
+                  "Push":true
+               },
+               "CreationDate":"2019-01-03T19:04:40",
+               "Active":true
+            }
+         ]
+      },
+      {  
+         "NotificationGroupId":4,
+         "NotificationGroupDescription":"Grupo 1",
+         "Notifications":[  
+            {  
+               "NotificationGroupId":4,
+               "NotificationGroupDescription":"Grupo 1",
+               "NotificationId":7,
+               "NotificationDescription":"Notificacion 1 Grupo 1",
+               "NotificationCode":"NOTIFICACION_1_GRUPO_1",
+               "ChannelSelection":{  
+                  "Mail":true,
+                  "Sms":true,
+                  "Push":true
+               },
+               "CreationDate":"2019-01-29T18:49:17",
+               "Active":true
+            },
+            {  
+               "NotificationGroupId":4,
+               "NotificationGroupDescription":"Grupo 1",
+               "NotificationId":8,
+               "NotificationDescription":"Notificacion 2 Grupo 1",
+               "NotificationCode":"NOTIFICACION_2_GRUPO_1",
+               "ChannelSelection":{  
+                  "Mail":true,
+                  "Sms":true,
+                  "Push":true
+               },
+               "CreationDate":"2019-01-29T18:49:17",
+               "Active":true
+            },
+            {  
+               "NotificationGroupId":4,
+               "NotificationGroupDescription":"Grupo 1",
+               "NotificationId":9,
+               "NotificationDescription":"Notificacion 3 Grupo 1",
+               "NotificationCode":"NOTIFICACION_3_GRUPO_1",
+               "ChannelSelection":{  
+                  "Mail":true,
+                  "Sms":true,
+                  "Push":true
+               },
+               "CreationDate":"2019-01-29T18:49:17",
+               "Active":true
+            },
+            {  
+               "NotificationGroupId":4,
+               "NotificationGroupDescription":"Grupo 1",
+               "NotificationId":10,
+               "NotificationDescription":"Notificacion 4 Grupo 1",
+               "NotificationCode":"NOTIFICACION_4_GRUPO_1",
+               "ChannelSelection":{  
+                  "Mail":true,
+                  "Sms":true,
+                  "Push":true
+               },
+               "CreationDate":"2019-01-29T18:49:17",
+               "Active":true
+            },
+            {  
+               "NotificationGroupId":4,
+               "NotificationGroupDescription":"Grupo 1",
+               "NotificationId":11,
+               "NotificationDescription":"Notificacion 5 Grupo 1",
+               "NotificationCode":"NOTIFICACION_5_GRUPO_1",
+               "ChannelSelection":{  
+                  "Mail":true,
+                  "Sms":true,
+                  "Push":true
+               },
+               "CreationDate":"2019-01-29T18:49:17",
+               "Active":true
+            }
+         ]
+      },
+      {  
+         "NotificationGroupId":5,
+         "NotificationGroupDescription":"Grupo 2",
+         "Notifications":[  
+
+         ]
+      },
+      {  
+         "NotificationGroupId":6,
+         "NotificationGroupDescription":"Grupo 3",
+         "Notifications":[  
+
+         ]
+      },
+      {  
+         "NotificationGroupId":7,
+         "NotificationGroupDescription":"Grupo 4",
+         "Notifications":[  
+
+         ]
+      },
+      {  
+         "NotificationGroupId":8,
+         "NotificationGroupDescription":"Grupo 5",
+         "Notifications":[  
+
+         ]
+      }
+   ]
+   
+} 
+
+
+  
+     

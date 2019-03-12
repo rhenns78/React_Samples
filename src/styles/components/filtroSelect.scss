@@ -1,0 +1,20 @@
+@import "colors.scss";
+
+// componente para los filtros de las diferentes tablas
+
+.tipo-denuncias-select {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  align-items: center;
+
+  > span {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  > div {
+    border: none;
+    border-radius: 50%;
+  }
+}

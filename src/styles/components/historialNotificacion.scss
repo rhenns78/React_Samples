@@ -1,0 +1,217 @@
+@import "colors.scss";
+// Historial de notificaciones
+
+.text-button-style{
+    font-weight: 600;
+    color: $verdeAchs;
+    border: none;
+}
+
+//Header y footer
+.historial-notificaciones-wrapper{
+    display: flex;
+    justify-content: center;
+    .content{
+        max-width: 430px;
+        min-width: 430px;
+        min-height: 200px;
+        max-height: 600px;
+        .head-notifications-history{
+            padding-top:10px;
+            background-color:$blanco;
+            width: 430px;
+            position: fixed;
+            border-bottom: 2px solid $grisClaro;
+            z-index: 2;
+            top:108px;
+            .tipo-denuncias-select{
+                display: flex;
+                padding-top:5px;
+                padding-bottom:5px;
+                >i{
+                    color: $azulAchs;
+                }
+                >span{
+                    color: $azulAchs;
+                    margin-left: 5px;
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
+                .denuncias-select-button{
+                    border-radius: 50%;
+                    border: none;
+                    >i{
+                        color: $azulAchs;
+                    }
+                }
+            }
+            .filter-options-wrapper{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                .options{
+                    flex-grow: 1;
+                    .filter-tabs-options{
+                        border: none;
+                        background-color: inherit;
+                        .dx-tab-selected:after {
+                            border-left: none !important;
+                            border-right: none !important;
+                            border-top: none!important;
+                            border-bottom: none !important;
+                        }                    
+                        .dx-tabs-wrapper {
+                            display: flex;
+                            flex-direction: row;
+                            border: none;
+                        }
+                        .dx-item.dx-tab {
+                            background-color: $grisClaro;
+                            color: $blanco;
+                            font-weight: 500;
+                            font-size: 14px;
+                            padding: 1px 0px 0px 0px;
+                            margin-right: 5px;
+                            height: 25px;
+                            border-radius: 5px;
+                            min-width: 70px;
+                            max-width: 70px;
+                        }
+                        .dx-item.dx-tab.dx-tab-selected {
+                            background-color: $azulAchs;
+                            border: none;
+                             position: initial;
+                        }
+                    }
+                }
+                >.text{
+                    @extend .text-button-style;
+                }
+            }
+        }
+    }
+}
+.foot-notifications-history{
+    padding-left:62;
+    padding-right: 100;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-top: 2px solid $grisClaro;
+    width: 430px;
+    background-color:#fff;
+    // position: fixed;
+    z-index: 1;
+    bottom:0;
+    .text{
+        @extend .text-button-style;
+    }
+}
+
+// Listado de notificaciones
+.listado-notificaciones{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right: 20px;
+    display: flex;
+    height: 75px;
+    align-items: center;
+    .icon-notificaciones{
+        width: 72px;
+        font-weight: bold;
+        color: $verdeAchs;
+        text-align: center;
+        .circle-notificaciones{
+            margin-left:10px;
+            width: 50px;
+            height: 50px;
+            background:$grisBlanco;
+            border-radius:50%;  
+            .circle-text{
+                left:50px;
+                color: $verdeAchs;
+                font-weight: 700;
+                top: auto;
+                font-size: 15px;
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+    }
+    .texto-notificaciones{
+        flex-grow: 1;
+        display: grid;
+        .titulo{
+            color: $verdeAchs;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        .mensaje{
+            font-weight: 500;
+            color: $grisOscuro;
+            border: none;
+        }
+    }
+    .fecha{
+        font-size: 12px;
+        color: $grisOscuro;
+        font-weight: 500;
+    }
+}
+
+
+.notification-list-wrapper{
+    @extend .listado-notificaciones;
+    .icon{
+        @extend .icon-notificaciones;
+        .circle-type-notification{
+            @extend .circle-notificaciones;
+            .circle-text-notification{
+                @extend .circle-text;
+                left:50px;
+                color: $verdeAchs;
+                font-weight: 700;
+                top: auto;
+                font-size: 15px;
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+    }
+    .text{
+        @extend .texto-notificaciones;
+        .title{
+            @extend .titulo;
+        }
+        .text{
+            @extend .mensaje;
+        }
+    }
+    .time{
+        @extend .fecha;
+    }
+}
+.notification-list-wrapper-unread{
+    background-color: $lightAzulAchs;
+}
+
+
+.notification-list-container{
+    padding-top:85px;
+    height: 70vh;
+    padding-bottom:5px;
+    .user-notification-list{
+        .dx-list-item-content{
+            padding:0px;
+        }
+        .notification-list-item-wrapper{
+            @extend .notification-list-wrapper;
+        }
+        .notification-list-item-wrapper.unread{
+            @extend .notification-list-wrapper;
+            @extend .notification-list-wrapper-unread;
+            ;
+        }
+    }
+}
+

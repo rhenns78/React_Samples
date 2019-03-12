@@ -1,0 +1,40 @@
+{ "Employees":[  
+    {
+        "Id": 1, "Name": "Juan Roman Riquelme", "Rut": "16692968-7", "Roles": [{ "Id": 11, "Description":"RRHH" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 2, "Name": "Leonel Messi", "Rut": "22222222-2",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 3, "Name": "Arturo VIdal", "Rut": "33333333-3",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 4, "Name": "Omar Merlo", "Rut": "44444444-4",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 5, "Name": "Jimmy Martinez", "Rut": "55555555-5",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 6, "Name": "Zinedine Zidane", "Rut": "66666666-6", "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 7, "Name": "Gutrhie Govan", "Rut": "77777777-7",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 8, "Name": "Steve Vai", "Rut": "88888888-8",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 9, "Name": "Eric Johnson", "Rut": "99999999-9",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 10, "Name": "Andy Mckee", "Rut": "1111111-1",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 11, "Name": "John Petrucci", "Rut": "2222222-2",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      },
+      {
+        "Id": 12, "Name": "Marcelo Rios", "Rut": "3333333-3",  "Roles": [{ "Id": 7, "Description":"Admin" }, { "Id": 10, "Description":"Worker" }], "Perfil": "Empleador"
+      }
+ ]
+ 
+}

@@ -1,0 +1,19 @@
+{
+    "IsActive": true,
+    "Message": "Usuario Existe",
+    "UserInfo": {
+      "FirstName": "Artour",
+      "MiddleName": null,
+      "LastName": "GARAEV"     
+    },
+    "Rol": {
+      "Id": 3,
+      "IdProfile": 0,
+      "Name": "string",
+      "Description": "string",
+      "Code": "PER_TRABAJADOR_ROL_DEPENDIENTE",
+      "Dispensable": "string",
+      "Active": true,
+      "CreationDate": "2018-12-17 16:05:07"
+    }
+  }

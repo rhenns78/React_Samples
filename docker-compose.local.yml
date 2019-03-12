@@ -1,0 +1,61 @@
+version: '2.0'
+    
+services:
+  profesionales-mongo:
+    image: mongo:3.6.2
+    ports: 
+      - "27018:27017"
+    networks: 
+      profesionales-net2:
+        ipv4_address: 10.6.0.5
+  profesionales-mongo-express:
+    image: mongo-express:latest
+    ports: 
+      - "8082:8081"
+    depends_on:
+      - profesionales-mongo
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=profesionales-mongo
+    networks: 
+      profesionales-net2:
+        ipv4_address: 10.6.0.6
+  profesionales-api:
+    image: clinicaalemana.azurecr.io/profesionales-api:latest
+    depends_on:
+      - profesionales-mongo
+    hostname: api
+    environment:
+      - DB_CONNECTION=mongodb://profesionales-mongo:27017
+    command: ./node_modules/.bin/nodemon --legacy-watch --inspect=0.0.0.0 server.js
+    ports:
+      - "3010:3000"
+    expose:
+      - '3010'
+    volumes:
+      - /src
+      - /src/node_modules
+    networks: 
+      profesionales-net2:
+        ipv4_address: 10.6.0.7
+  profesionales-jest-web:
+    image: clinicaalemana.azurecr.io/profesionales-jest-web:latest
+    depends_on:
+      - profesionales-api
+    build:
+      context: ./
+      dockerfile: jest.Dockerfile
+    ports:
+      - "3006:3000"
+    environment:
+      - TEST_API=http://10.6.0.7:3010
+    networks:
+      profesionales-net2:
+        ipv4_address: 10.6.0.8
+
+networks: 
+  profesionales-net2:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.6.0.0/16
+    

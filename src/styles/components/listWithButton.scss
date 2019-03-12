@@ -1,0 +1,52 @@
+@import "colors.scss";
+
+// Componente utilizado para un titulo, texto de definición y botón de acción
+// Ej: Correo y contraseñas
+
+.titulo{
+    color:$grisOscuro;
+    font-weight: bold;
+}
+.destacar{
+    color:$verdeAchs;
+}
+.button{
+    margin-top: 5px;
+}
+
+.list-with-button{
+    max-width: 520px;
+    .contenedor{
+        >h4{
+            @extend .titulo;
+        }
+        >div{
+            margin-top:5px;
+            >h5{
+                >strong{
+                    @extend .destacar;
+                }
+            }
+            .list-button{
+                @extend .button;
+            }
+        }
+    }
+    .contenedor-dos{
+        margin-top:20px;
+        >h4{
+            @extend .titulo;
+        }
+        >div{
+            margin-top:5px;
+            >h5{
+                >strong{
+                    @extend .destacar;
+                }
+            }
+            .list-button{
+                @extend .button;
+            }
+        }
+    }
+}

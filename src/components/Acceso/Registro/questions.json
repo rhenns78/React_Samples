@@ -1,0 +1,132 @@
+{
+      "QuestionsSetID": 1,
+      "TransactionKey": "0000000098770000000140393",
+      "QuestionsList": [
+        {
+          "Id": 1,
+          "Text": "¿En cuál de los siguientes Colegios o Liceos estuvo Usted el año 2010?",
+          "AnswerChoices": [
+            {
+              "Id": 1,
+              "Text": "ANEXO COME WEALTH SCHOOL",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 2,
+              "Text": "COLEGIO AURORA DE CHILE CHIGUAYANTE",
+              "CorrectAnswer": true
+            },
+            {
+              "Id": 3,
+              "Text": "COLEGIO SAN JOAQUIN",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 4,
+              "Text": "ESCUELA BASICA SANTA MARGARITA",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 5,
+              "Text": "Ninguna de las anteriores",
+              "CorrectAnswer": false
+            }
+          ]
+        },
+        {
+          "Id": 2,
+          "Text": "¿En cuál de las siguientes Instituciones de Educación superior estuvo Usted el año 2012?",
+          "AnswerChoices": [
+            {
+              "Id": 1,
+              "Text": "UNIVERSIDAD ADVENTISTA DE CHILE",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 2,
+              "Text": "UNIVERSIDAD DE ACONCAGUA",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 3,
+              "Text": "UNIVERSIDAD DEL BÍO-BÍO",
+              "CorrectAnswer": true
+            },
+            {
+              "Id": 4,
+              "Text": "UNIVERSIDAD PEDRO DE VALDIVIA",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 5,
+              "Text": "Ninguna de las anteriores",
+              "CorrectAnswer": false
+            }
+          ]
+        },
+        {
+          "Id": 3,
+          "Text": "¿De qué marca era el auto que tuvo Usted en el año 2013?",
+          "AnswerChoices": [
+            {
+              "Id": 1,
+              "Text": "CHEVROLET",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 2,
+              "Text": "DATSUN",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 3,
+              "Text": "MITSUBISHI",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 4,
+              "Text": "SAMSUNG",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 5,
+              "Text": "Ninguna de las anteriores",
+              "CorrectAnswer": true
+            }
+          ]
+        },
+        {
+          "Id": 4,
+          "Text": "¿En cuál de las siguientes sociedades tiene o tuvo participación?",
+          "AnswerChoices": [
+            {
+              "Id": 1,
+              "Text": "INVERSIONES Y ASESORIAS VICAR LIMITADA",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 2,
+              "Text": "INVITRODESIGN SERVICIOS PUBLICITARIOS LIMITADA",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 3,
+              "Text": "PRODUCTOS ALIMENTICIOS BIARRITZ LTDA",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 4,
+              "Text": "SERVICIOS QUIRURGICOS O P LIMITADA",
+              "CorrectAnswer": false
+            },
+            {
+              "Id": 5,
+              "Text": "Ninguna de las anteriores",
+              "CorrectAnswer": true
+            }
+          ]
+        }
+      ],
+      "SkipValidation": false,
+      "ErrorMessage": null
+    }

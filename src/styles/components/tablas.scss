@@ -1,0 +1,159 @@
+@import "colors.scss";
+
+.headerTooltipHelp {
+    background-color: $blanco;
+    color: black;
+    height: 13px;
+    min-width: 13px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.headerTooltipText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//main-color-celeste = $azulAchs.
+// esta clase se aplica a todas las tablas 
+// que no tienen un custom pre-definido
+.dx.dx-datagrid {
+    font-size: 14px;
+}
+div .dx-datagrid-rowsview .dx-datagrid-content .dx-row {
+    height: 50px;
+}
+.dx-datagrid-headers, 
+.dx-header-row {
+    background-color: $azulAchs;
+    border-bottom: none;
+}
+.dx-datagrid-text-content,  
+.dx-header-row .dx-treelist-text-content {
+    color:$blanco;
+}
+.dx-header-filter {
+    color:$blanco !important;
+}
+/*  fin de css default para control DataGrid*/
+
+/*Clase que pinta una tabla custom, es el reemplazo de tabla-siniestro & tabla-siniestro-general*/
+.group-Column {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    .dotIcon {
+        display: flex ;               
+    }
+    .space-text {
+        margin-left: 5px;
+    }
+    .bold-text {
+        font-weight: bold;
+    }
+    .text {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-transform: capitalize;           
+    }
+    
+  
+  
+}
+.table-label-light-blue {
+    background-color: $celesteBack;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: $azulAchs;
+}
+.table-label-green {
+    background-color: rgba($verdeAchs, .2);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: rgba($verdeAchs,.9);
+    
+}
+.table-label-gray {
+    background-color:$grisMedio;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: $blanco;
+}
+
+.cursor-disabled  {
+    div .dx-datagrid-rowsview .dx-datagrid-content table tbody tr   {
+        cursor: default !important;     
+     }       
+ }
+  //Tabla anidadas: 
+.simpleHeader .dx-datagrid .dx-datagrid-headers .dx-datagrid-content  table.dx-datagrid-table tbody  tr.dx-header-row {
+    background-color: $grisBlanco;    
+    height: 35px;    
+}
+.simpleHeader .dx-datagrid .dx-datagrid-headers .dx-datagrid-content table.dx-datagrid-table tbody tr.dx-header-row td div {
+    color: $grisOscuro;       
+}
+.simpleHeader div .dx-datagrid-rowsview .dx-datagrid-content .dx-row  {
+    height: 35px;  
+}
+.custom-table {
+    font-size: 14px;
+    min-height: 120px;
+    overflow: hidden;
+
+    .dx-datagrid-headers,.dx-header-row {
+        background-color: $azulAchs;
+        border-bottom: none;
+    }
+    .dx-datagrid-text-content,  
+    .dx-header-row .dx-treelist-text-content {
+          color: white;
+    }
+    .dx-datagrid-pager.dx-pager .dx-pages {
+      left: 0px
+    }
+    div .dx-datagrid-rowsview .dx-datagrid-content table tbody tr {
+       cursor: pointer;     
+    }
+    div .dx-datagrid-rowsview .dx-datagrid-content .dx-row  {
+        height: 50px;    
+    }
+    .group-Column {
+       @extend .group-Column;
+    }   
+   
+}
+.height-min {
+    min-height: 350px;
+  }
+
+// 
+.denuncias {
+    height: 75vh
+}
+.empresas {
+    height: 80vh;
+    .dx-toolbar-after {
+        left: 0;
+        padding-left: 0px;
+        margin-left: -15px;
+    }
+}
+
+.table-margin {
+    margin-top: 100px;
+}
+.table-margin-detalle {
+    margin-top: 50px;
+}

@@ -1,0 +1,56 @@
+@import "colors.scss";
+
+.tabsRoles {
+  border: none;
+  overflow: hidden;
+  background-color: transparent;
+
+  div:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  div:last-child {
+    border-top-right-radius: 10px;
+  }
+
+  div.dx-tab.dx-state-hover {
+    background-color: $azulAchs;
+    font-weight: 500;
+    color: white;
+   }
+
+   div.dx-tab.dx-tab-selected {
+    background-color: $azulAchs;
+    font-weight: 500;
+    color: white;
+  }
+
+  .tabStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .iconStyle {
+        margin-left: 10px;
+        height: 20px;
+        min-width: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: $grisOscuro;
+    }
+
+    
+  .iconStyle.activeIcon {
+    color: black;
+    background-color: white;
+  }
+
+
+}
